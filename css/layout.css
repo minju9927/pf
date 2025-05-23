@@ -95,6 +95,31 @@ header .main-nav a {
     display: none;
 }
 
+/* .full .modalNav ul li:hover{
+    color: #fff;
+} */
+
+.modalNav li.link {
+    display: block;
+    z-index: 2;       /* 각 요소가 분리되도록 */
+    position: relative;
+}
+
+.modalNav li.link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -.4rem;
+    width: 0;
+    height: .2rem;
+    background-color: #ffffff;
+    transition: width 1.5s ease;
+}
+
+.full .modalNav ul li.link:hover::after {
+    width: 100%;
+}
+
 .navBtn {
     display: none;
 }
@@ -929,19 +954,19 @@ header .main-nav a {
 
 .btn-swiper:hover {
     background-image: url();
-    color: transparent;
+    color: #ffffff4d;
 }
 
 
 .btn-js:hover {
     background-image: url();
-    color: transparent;
+    color: #ffffff4d;
 }
 
 
 .btn-api:hover {
     background-image: url();
-    color: transparent;
+    color: #ffffff4d;
 }
 
 /* footer */

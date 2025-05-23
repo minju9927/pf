@@ -26,7 +26,7 @@ window.addEventListener('scroll', function () {
 })
 
 
-navBtn.addEventListener('click',(e)=>{
+navBtn.addEventListener('click', (e) => {
     e.preventDefault()
     body.classList.toggle('full')
 })
@@ -34,7 +34,7 @@ navBtn.addEventListener('click',(e)=>{
 navBtnList.forEach(function (nav, index) {
 
     nav.addEventListener('click', function () {
-        
+
         body.classList.remove('full')
         init(index)
 
@@ -129,6 +129,29 @@ links.forEach(function (link, index) {
     })
 
 })
+
+
+// modalNav 
+// document.querySelectorAll('.modalNav .link').forEach((el) => {
+//     el.addEventListener('mouseenter', () => {
+//         gsap.to(el, {
+//             scale: 1.1,
+//             color: "#fff", // 원하는 색상으로 변경
+//             duration: 0.1,
+//             ease: "power2.out"
+//         });
+//     });
+
+//     el.addEventListener('mouseleave', () => {
+//         gsap.to(el, {
+//             scale: 1,
+//             color: "#ff047d", // 원래 색상으로 복구
+//             duration: 0.01,
+//             // ease: "power2.out"
+//         });
+//     });
+// });
+
 
 
 
